@@ -1,0 +1,90 @@
+#reverse of a string 
+a="engineering college"[ ::-1]
+print(a)
+
+#password
+password=input()
+l=len(password)
+if(l<8):
+    print("Invalid password")
+digit=False
+upper=False
+lower=False
+special=False
+special_character="@#&!$%^'?()-+_/*;<>{}[]\"
+for i in password:
+    if i.isdigit():
+        digit=True
+    elif i.isupper():
+        upper=True
+    elif i.islower():
+        lower=True
+    elif i in special_character:
+        special=True
+if digit and upper and lower:
+    print("Valid password")
+else:
+    print("Invalid password")
+
+#smallest number
+a=int(input("First number: ")
+b=int(input("Second number: ")
+c=int(input("Third number: ")
+if(a<b and a<c):
+    print("a is smallest")
+elif(b<a and b<c):
+    print("b is smallest")
+elif(c<b and c<a):
+    print("c is smallest")
+elif(a==b==c):
+    print("all are equal")
+elif(a==b and b>c)
+    print(" c is smallest")
+
+#months and seasons
+month=int(input())
+if month== 12 or 1 or 2:
+   print("WINTER")
+elif month== 3 or 4 or 5:
+   print("SUMMER")
+elif month== 6 or 7 or 8:
+   print("RAINY")
+elif month== 9 or 10:
+   print("SPRING")
+elif month==11:
+   print("AUTUMN")
+else:
+   print("None")
+
+#keywords and ascii values
+help("keywords")
+
+for i in range(56,98):
+     print(chr(i))
+
+#calculator
+a=int(input("first integer: ")
+operator=input()
+b=int(input("second integer: ")
+if operator=='+':
+    print(a+b)
+elif operator=='-':
+    print(a-b)
+elif operator=='*':
+    print(a*b)
+elif operator=='/':
+    print(a/b)
+elif operator=='%':
+    print(a%b)
+elif operator=='//':
+    print(a//b)
+elif operator=='**':
+    print(a**b)
+
+#hypenated
+s=input()
+print('-'.join())
+
+
+
+
