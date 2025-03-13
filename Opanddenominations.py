@@ -1,23 +1,16 @@
 #bitwise operators
-# Define the input bitstring
 bitstring = "1A0B0C1"
-
-# Start with the first bit
 result = int(bitstring[0])
-
-# Loop through the string to apply operations
 for i in range(1, len(bitstring) - 1, 2):
     operator = bitstring[i]
     next_bit = int(bitstring[i + 1])
 
-    if operator == 'A':   # AND operation
+    if operator == 'A':   
         result &= next_bit
-    elif operator == 'B': # OR operation
+    elif operator == 'B': 
         result |= next_bit
-    elif operator == 'C': # XOR operation
+    elif operator == 'C': 
         result ^= next_bit
-
-# Print the final result
 print("Result:", result)
 
 #denomination
@@ -39,4 +32,3 @@ ten_notes = amount // 10
 amount %= 10
 print("Ten (10):", ten_notes)
 
-print("Remaining amount:", amount)
