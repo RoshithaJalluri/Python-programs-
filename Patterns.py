@@ -25,6 +25,13 @@ n=10
 for i in range(n):
     print("* "*i)
 
-#LEFT PYRAMID 
+#REVERSE PYRAMID 
+
+n=5
+for i in range(n):
+    print("* "*n)
+    n=n-1
+
+
     
 
