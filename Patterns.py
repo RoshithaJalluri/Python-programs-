@@ -32,6 +32,35 @@ for i in range(n):
     print("* "*n)
     n=n-1
 
+#LEFT HALF PYRAMID 
+
+n=10
+for i in range(n):
+    print(" "*(n-i)+"*"i)
+
+
+#REVERSE PYRAMID 
+
+n=10
+for i in range(n):
+    print(" "*i+"*"*n)
+    n=n-1
+
+
+#HALLOW TRIANGLE 
+
+n=10
+for i in range(n):
+    if i==0 or i==n-1:
+        print(" "*(n-i)+"* "*(i+1))
+    else:
+        print(" "*(n-i-1)+"*"+"  "*(i)+" *")
+
+
+
+
+
+
 
     
 
